@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    border-radius: 3px;
+    margin: auto;
+    max-width: 450px;
+    min-width: 300px;
+    padding: 40px 50px;
+    display: table;
+    background-color: #fff;
+}
+
+#container>.v0-verb {
+    text-align: center;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+#container>.trans-verb {
+    text-align: center;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+#container>.curr-tense {
+    text-align: center;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+#container>.buttons {
+    max-width: 450px;
+    min-width: 300px;
+    display: block;
+    text-align: center;
+}
+
+#container>.buttons>.button {
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#container>.buttons-switch-tense {
+    max-width: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 1em;
+    row-gap: 0.6em;
+    margin-top: 20px;
+}
+
+#container>.buttons-switch-tense>.button {
+    width: 6em;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#quote {
+    float: right;
+}
+
+#container>.buttons>.button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    width: 175px;
+    text-align: center;
+    display: block;
+    margin: 15px auto 30px auto;
+    font-size: 0.8em;
+    color: #fff;
+    padding: 0;
+}
+
+.footer>a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
