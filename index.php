@@ -18,10 +18,11 @@
             <div class="trans-verb"><span id="trans"></span></div>
             <div class="curr-tense"><span id="curr-tense"></span></div>
             <div class="buttons-switch-tense">
-                <button class="button button-switch-tense" id="v1">1</button>
-                <button class="button button-switch-tense" id="v2">2</button>
-                <button class="button button-switch-tense" id="v3">3</button>
-                <button class="button button-switch-tense" id="v4">4</button>
+                <button class="button button-switch-tense" id="PI1">PI1</button>
+                <button class="button button-switch-tense" id="PI2">PI2</button>
+                <button class="button button-switch-tense" id="PI3">PI3</button>
+                <button class="button button-switch-tense" id="PI4">PI4</button>
+                <button class="button button-switch-tense" id="PI5">PI5</button>
             </div>
             <div class="buttons">
                 <button class="button" id="new-verb">Новый глагол</button>
@@ -50,7 +51,7 @@
 
     $mysqli->set_charset("utf8");
 
-    $query = "SELECT * FROM pt_verbos";
+    $query = "SELECT * FROM table_name";
     $result = mysqli_query($mysqli, $query);
     $stack = array();
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -94,7 +95,7 @@
                 $(this).animate({
                     opacity: 1
                 }, 500);
-                $('#v0').text(randomVerb.v0);
+                $('#v0').text(randomVerb["INFEU"]);
             });
 
             $('.trans-verb').animate({
@@ -103,7 +104,7 @@
                 $(this).animate({
                     opacity: 1
                 }, 500);
-                $('#trans').html(randomVerb.trans);
+                $('#trans').html(randomVerb["RUS"]);
             });
 
             $('.curr-tense').animate({
